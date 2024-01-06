@@ -41,16 +41,16 @@
 ## Phase 3: Audio Design
 1. **Compose Multiple Music Tracks:**
     - **Reflecting Each In-Game Day's Mood:**
-		- [TO-DO] Outline the musical themes and emotions corresponding to each day's progression in the game.
-		- [TO-DO] Compose upbeat and cheerful melodies for the initial days, gradually transitioning to eerie and unsettling tones.
-		- [TO-DO] Ensure a smooth transition between tracks, maintaining coherence with the evolving narrative.
-    
+        - [TO-DO] Outline the musical themes and emotions corresponding to each day's progression in the game.
+        - [TO-DO] Compose upbeat and cheerful melodies for the initial days, gradually transitioning to eerie and unsettling tones.
+        - [TO-DO] Ensure a smooth transition between tracks, maintaining coherence with the evolving narrative.
+
 2. **Create Ambient Sound Effects:**
     - **Metro Station Noises, Screams, Whispers, etc.:**
         - [TO-DO] Record or synthesize audio for ambient noises specific to metro stations, such as train sounds, distant buskers, crowd murmur, etc.
-		- [TO-DO] Create disturbing ambient sound effects like distant screams, whispers, and other surreal audio elements for heightened tension.
+        - [TO-DO] Create disturbing ambient sound effects like distant screams, whispers, and other surreal audio elements for heightened tension.
         - [TO-DO] Use audio effects and manipulation to create a sense of unease and psychological discomfort.
-    
+
 3. **Generate Special Sound Effects for Interactions:**
     - **Enhancing Immersion in Specific Interactions:**
         - [TO-DO] Design and produce sound effects for routine interactions (picking up objects, using items) in the game environment.
