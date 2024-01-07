@@ -59,7 +59,7 @@ Upon completion and readiness, the game is intended to be available on popular g
 | Role               | Contributor      |
 |--------------------|------------------|
 | Developers         | [Nirav](https://github.com/Niravanaa), [Denmar](https://github.com/getll)    |
-| Playtesters        | [Laurenz](https://github.com/GolimarGit), [Kiara](https://github.com/Kiararara), [Tracey](https://github.com/TraceyV), [Abisan](https://github.com/orgs/StoryTime-Productions/people/Abisan-AP), Annika |
+| Playtesters        | [Laurenz](https://github.com/GolimarGit), [Kiara](https://github.com/Kiararara), [Tracey](https://github.com/TraceyV), [Abisan](https://github.com/Abisan-AP), Annika |
 
 Many thanks to [Valeria Moza](https://github.com/valerie-palerie) for her free [PSX Shader Kit](https://assetstore.unity.com/packages/vfx/shaders/psx-shader-kit-183591).
 
