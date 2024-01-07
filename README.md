@@ -21,12 +21,6 @@
 
 Prochaine Station is a psychological horror adventure game that takes players on a surreal journey through a metro system over five days. As players progress through each day, they encounter mundane tasks intermixed with increasingly bizarre and unsettling events. The game focuses on immersive storytelling, unconventional mechanics, and an eerie atmosphere to deliver a unique narrative-driven experience.
 
-## Game Design Document Overview
-
-For an in-depth understanding of the game's mechanics, gameplay, art style, storyline, and technical aspects, please refer to the [Game Design Document](https://docs.google.com/document/d/1C7i1SUJIUcmExZouE3yaT0GeMvFvgSWsXZ3QPbsfMKo/edit?usp=sharing).
-
-Additionally, for insights into the game's development process, the team's progress, and more detailed information, you can explore the [Developer's Blog](https://github.com/StoryTime-Productions/ProchaineStation/wiki) written by the game developers.
-
 ## Features
 
 - Psychological horror adventure with surreal storytelling
@@ -53,6 +47,12 @@ Upon completion and readiness, the game is intended to be available on popular g
 - Navigate through each day's scenarios using simple controls.
 - Engage with environment objects and progress through tasks/events.
 - Immerse yourself in the narrative-driven, psychological gameplay.
+
+## Game Design Document Overview
+
+For an in-depth understanding of the game's mechanics, gameplay, art style, storyline, and technical aspects, please refer to the [Game Design Document](https://docs.google.com/document/d/1C7i1SUJIUcmExZouE3yaT0GeMvFvgSWsXZ3QPbsfMKo/edit?usp=sharing).
+
+Additionally, for insights into the game's development process, the team's progress, and more detailed information, you can explore the [Developer's Blog](https://github.com/StoryTime-Productions/ProchaineStation/wiki) written by the game developers.
 
 ## Acknowledgments
 
