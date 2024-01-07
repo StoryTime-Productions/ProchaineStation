@@ -1,4 +1,4 @@
-# 
+#
 <p align="center">
 <br>
   <img src="https://i.imgur.com/BMe4BvT.png" height="100" width="auto"/>
@@ -9,7 +9,6 @@
   <img src="https://img.shields.io/github/v/tag/StoryTime-Productions/ProchaineStation.svg?sort=semver" />
   <img src="https://img.shields.io/github/issues-raw/StoryTime-Productions/ProchaineStation.svg?maxAge=25000" />
   <img src="https://img.shields.io/github/issues-pr/StoryTime-Productions/ProchaineStation.svg?style=flat" />
-  
   <br>
   <br>
   <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" />
