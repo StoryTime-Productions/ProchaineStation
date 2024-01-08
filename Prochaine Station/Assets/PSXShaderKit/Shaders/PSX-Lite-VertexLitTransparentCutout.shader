@@ -41,7 +41,7 @@
 			#define PSX_CUBEMAP_COLOR _CubemapColor
 			#define PSX_CUTOUT_VAL _Cutoff
 			
-			#include "PSX-ShaderSrc-lite.cginc"
+			#include "PSX-ShaderSrc-Lite.cginc"
 
 		ENDCG
 		}
