@@ -108,4 +108,4 @@ jobs:
           tag_name="${{ steps.previoustag.outputs.tag }}"
           mv ProchaineStation.zip "ProchaineStation-[BUILD-${tag_name}].zip"
           curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/zip" \
-          --data-binary "@ProchaineStation-[BUILD-${tag_name}].zip" "$release_upload_url?name=ProchaineStation-[BUILD-${tag_name}].zip"
+          --data-binary "@ProchaineStation-[BUILD-${tag_name}].zip" "$release_upload_url?name=ProchaineStation-${tag_name}.zip"
