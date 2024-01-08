@@ -1,4 +1,4 @@
-name: Semantic Release
+name: Upload Latest Artifact to Release
 
 on:
   push:
@@ -6,11 +6,12 @@ on:
       - main
 
 jobs:
-  release:
+  upload-artifact:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install Node.js
         uses: actions/setup-node@v3
@@ -18,9 +19,93 @@ jobs:
           node-version: '14'
 
       - name: Install semantic-release
-        run: npm install -g semantic-release@17 @semantic-release/git@10
+        run: npm install -g semantic-release@17 @semantic-release/git@10 @semantic-release/changelog
 
       - name: Semantic Release
         run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: 'Get Previous tag'
+        id: previoustag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        with:
+          fallback: 1.0.0
+          
+      - name: Determine Latest Tag and Release
+        id: check_tag_release
+        run: |
+          release_info=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/releases/latest")
+
+          tag_name=$(echo "$release_info" | jq -r '.tag_name')
+          echo "::set-output name=tag_name::$tag_name"
+
+      - name: Determine Action
+        id: determine_action
+        run: |
+          if [ "${{ steps.previoustag.outputs.tag }}" != "${{ steps.check_tag_release.outputs.tag_name }}" ]; then
+            echo "::set-output name=action::create_release"
+          fi
+
+      - name: Create Release
+        if: steps.determine_action.outputs.action == 'create_release'
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.previoustag.outputs.tag }}
+          release_name: ${{ steps.previoustag.outputs.tag }}
+          body_path: ./docs/CHANGELOG.md
+          draft: false
+          prerelease: false
+
+      - name: Delete Changelog File
+        if: steps.determine_action.outputs.action == 'create_release'
+        run: |
+          rm ./docs/CHANGELOG.md
+
+      - uses: game-ci/unity-builder@v4
+        if: steps.determine_action.outputs.action == 'create_release'
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: StandaloneWindows64
+          projectPath: ./Prochaine Station/
+
+      - uses: actions/upload-artifact@v4
+        if: steps.determine_action.outputs.action == 'create_release'
+        with:
+          name: ProchaineStation
+          path: build
+
+      - name: Download Latest Artifact
+        if: steps.determine_action.outputs.action == 'create_release'
+        run: |
+          # Fetch the latest artifact URL
+          artifact_url=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/artifacts" | jq -r '.artifacts[0].archive_download_url')
+
+          # Download the latest artifact
+          curl -L -o ProchaineStation.zip -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "$artifact_url"
+
+      - name: Get Latest Release Upload URL
+        if: steps.determine_action.outputs.action == 'create_release'
+        id: get_release_upload_url
+        run: |
+          release_upload_url=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.upload_url')
+
+          echo "::set-output name=release_upload_url::$release_upload_url"
+
+      - name: Upload Artifact to Release
+        if: steps.determine_action.outputs.action == 'create_release'
+        run: |
+          release_upload_url=$(echo "${{ steps.get_release_upload_url.outputs.release_upload_url }}" | sed 's/{?name,label}//')
+          tag_name="${{ steps.previoustag.outputs.tag }}"
+          mv ProchaineStation.zip "ProchaineStation-[BUILD-${tag_name}].zip"
+          curl -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Content-Type: application/zip" \
+          --data-binary "@ProchaineStation-[BUILD-${tag_name}].zip" "$release_upload_url?name=ProchaineStation-[BUILD-${tag_name}].zip"
