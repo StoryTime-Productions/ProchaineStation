@@ -2,7 +2,7 @@
 
 ## Phase 1: Game Design and Planning
 1. **Outline Specific Gameplay Mechanics:**
-    - [TO-DO] Define core interactions (object interaction, movement controls, environmental triggers) based on each day's theme and progression.
+    - [x] Define core interactions (object interaction, movement controls, environmental triggers) based on each day's theme and progression.
     - [TO-DO] Design and document the evolution of puzzles or challenges, ensuring a gradual increase in complexity and surrealism across the five days.
     - [TO-DO] Create a mechanics flowchart illustrating how players engage with the environment and progress through different scenarios.
 
