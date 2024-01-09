@@ -1,6 +1,6 @@
 # Phase 1.1 - List of Environmental Triggers
 
-### Day 1 - Best Happy Music
+## Day 1 - Best Happy Music
 - [ ] **Gargle Mouthwash from Therapist's Table:**
   - Trigger: Interact with the therapist's table to perform the action of gargling mouthwash.
 - [ ] **Stop at a Metro Station, Listen to Buskers:**
@@ -10,7 +10,7 @@
 - [ ] **End at Apartment, Sleep:**
   - Trigger: Reach the apartment location and engage with the bed to initiate the sleep action.
 
-### Day 2 - Okay Happy Music
+## Day 2 - Okay Happy Music
 - [ ] **Start at Apartment, Get Ready then Leave Building to Metro:**
   - Trigger: Engage with various items in the apartment to complete the preparation.
 - [ ] **Stop at a Metro Station, Pick Up Trash:**
@@ -20,7 +20,7 @@
 - [ ] **End at Therapist, Have Therapy Session Transition:**
   - Trigger: Reach the therapist's location and engage with the environment to transition into the therapy session.
 
-### Day 3 - Uhhh Kinda Music
+## Day 3 - Uhhh Kinda Music
 - [ ] **Start at Apartment, Get Ready then Leave Building to Metro:**
   - Trigger: Engage with various items in the apartment to complete the preparation.
 - [ ] **Stop at a Metro Station, Listen to Screams:**
@@ -30,7 +30,7 @@
 - [ ] **End at Therapist, Have Therapy Session Transition:**
   - Trigger: Reach the therapist's location and engage with the environment to transition into the therapy session.
 
-### Day 4 - No Music
+## Day 4 - No Music
 - [ ] **Start at Apartment, Get Ready then Leave Building to Metro:**
   - Trigger: Engage with various items in the apartment to complete the preparation.
 - [ ] **Stop at a Metro Station, Pick up a Dead Rat:**
@@ -40,7 +40,7 @@
 - [ ] **Get Back on Train, Activate Emergency Stop, Pass Out:**
   - Trigger: Interact with the train controls or a specific object to activate the emergency stop and trigger the blackout sequence.
 
-### Day 5 - Distorted Backwards Music with Screams
+## Day 5 - Distorted Backwards Music with Screams
 - [ ] **Wake Up From Bed in Apartment:**
   - Trigger: Interact with the bed to initiate the waking-up sequence.
 - [ ] **Walk Slowly, no NPC, to the Town's Drug Dealer:**

@@ -18,7 +18,7 @@ public class HeadBobber : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Mathf.Abs(controller.moveDirection.x) > 0.1f || Mathf.Abs(controller.moveDirection.z) > 0.1f)
+        if (Mathf.Abs(controller.moveDirection.x) > 0.1f || Mathf.Abs(controller.moveDirection.z) > 0.1f)
         {
             //Player is moving
             timer += Time.deltaTime * walkingBobbingSpeed;
