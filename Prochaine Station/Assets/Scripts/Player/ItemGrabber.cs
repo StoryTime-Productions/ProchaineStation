@@ -22,7 +22,7 @@ public class ItemGrabber : MonoBehaviour
     {
         // Check for "E" key press to pick up or throw the item
         if (Input.GetKeyDown(KeyCode.E))
-        {            
+        {
             if (heldItem == null)
             {
                 Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRadius);

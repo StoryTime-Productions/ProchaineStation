@@ -2,56 +2,56 @@
 
 **Note that every good-day model should have its counter-bad-day model!**
 
-### Overworld Urban Area:
-- [ ] Buildings
+### Overworld Urban Area
+1. Buildings
     - [ ] Low-poly structures
-- [ ] Streets
+2. Streets
     - [ ] Sidewalks, pavements, roads
-- [ ] Objects
+3. Objects
     - [ ] Lamps, benches, trash cans, telephone booths, trees, bushes
 
-### Underground/Metro Cart:
-- [ ] Metro Stations
+### Underground/Metro Cart
+1. Metro Stations
     - [ ] Entrance and platform areas
-- [ ] Train Carts
+2. Train Carts
     - [ ] Low-poly models with seats and poles
-- [ ] Tracks
+3. Tracks
     - [ ] Simple track elements, platforms, railings
-- [ ] Metro Station Assets
+4. Metro Station Assets
     - [ ] Specific assets for different stations
 
-### Specific Locations:
-- [ ] Therapist's Office
+### Specific Locations
+1. Therapist's Office
     - [ ] Therapist's table, office furniture, props
-- [ ] Grocery Store (Uplifting)
+2. Grocery Store (Uplifting)
     - [ ] Shelves, grocery items, shopping baskets/carts
-- [ ] Beer Shop (Dark)
+3. Beer Shop (Dark)
     - [ ] Beer bottles, racks, cashier counter
-- [ ] Alleyways
+4. Alleyways
     - [ ] Trash, dead rat model, setting elements
-- [ ] Train Emergency Stop
+5. Train Emergency Stop
     - [ ] Controls, emergency buttons, significant items
-- [ ] Drug Dealer's Alley
+6. Drug Dealer's Alley
     - [ ] Pills/drug-related items, table, scene elements
-- [ ] Main Character's Apartment Room and Building
+7. Main Character's Apartment Room and Building
    - [ ] Building Entrance, Stairs(?), Room + Respective Decoration
 
-### Characters:
-- [ ] Main Character (Not Visible)
+### Characters
+1. Main Character (Not Visible)
     - [ ] Basic Office Fit Male & Homeless Druggie Male
-- [ ] Nice-Looking Therapist
+2. Nice-Looking Therapist
     - [ ] Different appearance, chair, table
-- [ ] Co-worker
+3. Co-worker
     - [ ] Simple NPC model representing the co-worker
-- [ ] NPCs
+4. NPCs
     - [ ] Simple character models for pedestrians
 
-### Props and Miscellaneous:
-- [ ] Items for Interaction
+### Props and Miscellaneous
+1. Items for Interaction
     - [ ] Trash bags, coworker's items, mouthwash bottle, etc.
-- [ ] Doors and Interactive Elements
+2. Doors and Interactive Elements
     - [ ] Regular doors, metro cart doors, buttons, switches
-- [ ] HUD and Menu Assets
+3. HUD and Menu Assets
     - [ ] Basic visual elements for HUD, menus, settings
-- [ ] Sound Effects and Audio Tracks
+4. Sound Effects and Audio Tracks
     - [ ] Gurgling sounds, street sounds, screams, music tracks
