@@ -25,6 +25,7 @@ Prochaine Station/[Aa]ssets/Plugins/Editor/JetBrains*
 
 # Visual Studio cache directory
 Prochaine Station/.vs/
+Prochaine Station/.vscode/
 
 # Gradle cache directory
 Prochaine Station/.gradle/

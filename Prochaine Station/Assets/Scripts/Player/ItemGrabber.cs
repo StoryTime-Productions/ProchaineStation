@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ItemGrabber : MonoBehaviour
@@ -9,9 +10,6 @@ public class ItemGrabber : MonoBehaviour
 
     public float swaySpeed = 1.5f; // Speed of item swaying
     public float swayAmount = 0.02f; // Amount of swaying motion
-    public float dropForwardOffset = 1f; // Offset for dropping the item forward
-    public float throwLeftOffset = 0.2f; // Offset for throwing the item to the left
-    public float throwUpOffset = 0.1f; // Offset for throwing the item upward
     public float throwForce = 10f; // Force applied to the thrown item
 
     private Rigidbody heldItem; // Reference to the currently held item
@@ -86,22 +84,36 @@ public class ItemGrabber : MonoBehaviour
         itemRigidbody.transform.SetParent(itemHoldPosition);
 
         // Set the local position of the item relative to the itemHoldPosition
-        itemRigidbody.transform.localPosition = new Vector3(0f, 0f, dropForwardOffset);
         itemRigidbody.transform.localRotation = Quaternion.identity; // Reset rotation
     }
 
     private void ThrowItem()
     {
-        heldItem.transform.SetParent(null); // Remove the parent
-        heldItem.isKinematic = false; // Enable physics interactions
-        heldItem.detectCollisions = true; // Enable collision detection
+        if (heldItem != null)
+        {
+            // Apply force to throw the item
+            heldItem.transform.SetParent(null); // Remove the parent
+            heldItem.isKinematic = false; // Enable physics interactions
+            heldItem.detectCollisions = true; // Enable collision detection
 
-        // Calculate the throw direction based on the camera's forward direction
-        Vector3 throwDirection = transform.forward + transform.up * throwUpOffset - transform.right * throwLeftOffset;
+            // Check if the cube is too close to the ground
+            RaycastHit hit;
+            if (Physics.Raycast(heldItem.transform.position, Vector3.down, out hit, interactionRange))
+            {
+                float distanceToGround = hit.distance;
+                if (distanceToGround < 0.1f) // Adjust this threshold as needed
+                {
+                    // Reduce the throw force when the cube is close to the ground to prevent phasing
+                    throwForce *= 0.5f; // Adjust the multiplier as needed
+                }
+            }
 
-        // Apply force to throw the item
-        heldItem.AddForce(throwDirection * throwForce, ForceMode.Impulse);
+            // Apply force to the cube
+            heldItem.AddForce(new Vector3(Camera.main.transform.forward.x, 0.2f, Camera.main.transform.forward.z) * throwForce, ForceMode.Impulse);
+            heldItem = null; // Reset heldItem reference after throwing
+        }
     }
+
 
     private void EnterInspectMode()
     {
@@ -118,6 +130,11 @@ public class ItemGrabber : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         isInspecting = false;
+
+        if (heldItem != null)
+        {
+            heldItem.transform.localRotation = Quaternion.identity;
+        }
     }
 
     private void InspectItem()

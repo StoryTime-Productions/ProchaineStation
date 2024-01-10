@@ -24,7 +24,7 @@
   2. **Leaving the Building:** Trigger an animation showing the main character locking the apartment door and descending the stairs.
   3. **Metro Entrance:** As in Day 1, navigate the lively street and head to the metro entrance.
   4. **Trash Pickup:** At one station, the main character is tasked with picking up trash scattered around.
-  5. **Meeting a Coworker:** Arriving at another station, initiate an interaction animation with a coworker NPC.
+  5. **Meeting a Coworker:** Arriving at another station, the main character is tasked with getting into a conversation with a coworker NPC.
   6. **Therapist's Session:** Arrive at the therapist's office for a session triggering a sitting animation.
 
 ## Day 3
