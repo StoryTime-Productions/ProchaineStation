@@ -2,22 +2,22 @@
 
 ## Phase 1: Game Design and Planning
 1. **Outline Specific Gameplay Mechanics:**
-    - [x] Define core interactions (object interaction, movement controls, environmental triggers) based on each day's theme and progression.
-    - [TO-DO] Design and document the evolution of puzzles or challenges, ensuring a gradual increase in complexity and surrealism across the five days.
-    - [TO-DO] Create a mechanics flowchart illustrating how players engage with the environment and progress through different scenarios.
+    - ✅ Define core interactions (object interaction, movement controls, environmental triggers) based on each day's theme and progression.
+    - ✅ Design and document the evolution of puzzles or challenges, ensuring a gradual increase in complexity and surrealism across the five days.
+    - ✅ Create a mechanics flowchart illustrating how players engage with the environment and progress through different scenarios.
 
 2. **Detail Tasks, Events, and Challenges for Each Station:**
     - **Day 1 & 2 - Normal Days:**
-        - [TO-DO] Specify mundane tasks (e.g., picking up groceries, meeting the therapist) with subtle variations between Day 1 and Day 2.
+        - ✅ Specify mundane tasks (e.g., picking up groceries, meeting the therapist) with subtle variations between Day 1 and Day 2.
     - **Day 3 & 4 - Transition to Strange Events:**
-        - [TO-DO] Detail unusual occurrences (e.g., encountering unsettling sounds, interacting with an imaginary person) showcasing the shift in atmosphere.
+        - ✅ Detail unusual occurrences (e.g., encountering unsettling sounds, interacting with an imaginary person) showcasing the shift in atmosphere.
     - **Day 5 - Climactic Level:**
-        - [TO-DO] Plan the dramatic conclusion, detailing disorienting scenarios and the protagonist's abrupt journey to the drug dealer's table.
+        - ✅ Plan the dramatic conclusion, detailing disorienting scenarios and the protagonist's abrupt journey to the drug dealer's table.
 
 3. **Define Character Traits, Relationships, and Animations:**
-    - [TO-DO] Develop comprehensive profiles for key characters, outlining their backgrounds, personalities, and motivations.
-    - [TO-DO] Establish relationships between characters, specifying how they interact or influence the protagonist's experiences.
-    - [TO-DO] Design character animations aligned with the PSX-era aesthetic, focusing on limited joint movements and stylized actions for each character.
+    - ✅ Develop comprehensive profiles for key characters, outlining their backgrounds, personalities, and motivations.
+    - ✅ Establish relationships between characters, specifying how they interact or influence the protagonist's experiences.
+    - ✅ Design character animations aligned with the PSX-era aesthetic, focusing on limited joint movements and stylized actions for each character.
 
 
 ## Phase 2: Art Direction and Asset Creation
