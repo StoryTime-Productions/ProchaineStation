@@ -2,10 +2,10 @@
 
 ## Main Character's Appartment
 
-### Floor Plan
+### Appartment Floor Plan
 ![Floor Plan](https://i.imgur.com/ByWPOtE.jpg)
 
-### Various 3D Views
+### Appartment 3D Views
 ![View 1](https://i.imgur.com/65bQ4ak.png)
 
 ![View 2](https://i.imgur.com/LbKMsL7.png)
@@ -26,18 +26,18 @@
 
 ## Therapy Building + Office
 
-### Floor Plan + Outside View
+### Therapy Floor Plan + Outside View
 ![FP + OV](https://i.imgur.com/CgxYmPb.jpg)
 
-### 3D View(s)
+### Therapy 3D View(s)
 ![View 1](https://i.imgur.com/WMVQGlH.png)
 
 ## Drug Building + Office
 
-### Floor Plan + Outside View
+### Drug Floor Plan + Outside View
 ![FP + OV](https://i.imgur.com/bviIdHw.jpg)
 
-### 3D View(s)
+### Drug 3D View(s)
 ![View 1](https://i.imgur.com/Tjtfiz6.png)
 
 Sketches done by: Kiara
