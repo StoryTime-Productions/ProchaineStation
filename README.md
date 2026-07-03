@@ -41,6 +41,15 @@ Prochaine Station is a psychological horror adventure game that takes players on
 
 Upon completion and readiness, the game is intended to be available on popular game launchers. Stay tuned for updates regarding its official release on these platforms.
 
+### Development setup
+
+This repo enforces formatting and conventional commit messages locally via [pre-commit](https://pre-commit.com/):
+
+```
+pip install pre-commit
+pre-commit install
+pre-commit install --hook-type commit-msg
+```
 
 ## How to Play
 
