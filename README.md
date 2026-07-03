@@ -1,52 +1,65 @@
-#
 <p align="center">
-<br>
-  <img src="https://i.imgur.com/BMe4BvT.png" height="100" width="auto"/>
-  <br>
-  <br>
-  <img src="https://img.shields.io/badge/License-MIT-purple.svg" />
-  <img src="https://img.shields.io/github/downloads/StoryTime-Productions/ProchaineStation/total" />
-  <img src="https://img.shields.io/github/v/tag/StoryTime-Productions/ProchaineStation.svg?sort=semver" />
-  <img src="https://img.shields.io/github/issues-raw/StoryTime-Productions/ProchaineStation.svg?maxAge=25000" />
-  <img src="https://img.shields.io/github/issues-pr/StoryTime-Productions/ProchaineStation.svg?style=flat" />
-  <br>
-  <br>
-  <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" />
-  <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" />
-  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+  <img src="https://i.imgur.com/BMe4BvT.png" height="100" width="auto" alt="Prochaine Station banner" />
 </p>
 
-## Description
+<p align="center">
+  <a href="https://github.com/StoryTime-Productions/ProchaineStation/actions/workflows/Super-Linter.yml"><img src="https://github.com/StoryTime-Productions/ProchaineStation/actions/workflows/Super-Linter.yml/badge.svg" alt="CI status" /></a>
+  <img src="https://img.shields.io/badge/Engine-Unity%202022.3.16f1%20LTS-blueviolet" alt="Unity 2022.3.16f1 LTS" />
+</p>
 
 Prochaine Station is a psychological horror adventure game that takes players on a surreal journey through a metro system over five days. As players progress through each day, they encounter mundane tasks intermixed with increasingly bizarre and unsettling events. The game focuses on immersive storytelling, unconventional mechanics, and an eerie atmosphere to deliver a unique narrative-driven experience.
 
-## Features
+## About The Project
+
+The game unfolds over five in-universe days, each transitioning from ordinary, everyday tasks into cryptic and psychologically unsettling encounters. It uses a low-poly art style with a PSX shader for a nostalgic, unsettling look, and leans on narrative immersion rather than combat or action mechanics to build tension.
+
+## Gameplay
+
+Players navigate through each day's scenarios, engaging with environment objects and progressing through tasks and events. As the days progress, the game layers in cryptic, puzzle-like challenges and psychological horror encounters on top of the mundane routine, gradually building tension and uncertainty.
+
+### Controls
+
+| Action | Input |
+|--------|-------|
+| Move | W/A/S/D or Arrow Keys |
+| Look around | Mouse |
+| Jump | Space |
+| Interact (pick up items, open doors, toggle lights, drop item in cart, toggle record player) | E |
+| Inspect held item (rotate with mouse, scroll to spin) | I |
+| Rotate item while inspecting | Mouse Scroll Wheel |
+| Grab/push shopping cart | Q (hold) |
+| Toggle flashlight | F |
+| Pause/resume menu | Escape |
+
+### Features
 
 - Psychological horror adventure with surreal storytelling
 - Five-day progression through distinct scenarios
 - Low-poly art style with PSX shader for a nostalgic appearance
 - Narrative-driven gameplay emphasizing psychological unease
+- Cryptic, puzzle-like challenges layered into each day's progression
 
-## Gameplay Highlights
+## Built With
 
-- **Game Progression:** Transition from mundane tasks to surreal and unsettling encounters over five days.
-- **Puzzle Structure:** Navigate through cryptic and psychological challenges within each day.
-- **Narrative Immersion:** Engage in narrative-driven experiences, gradually building tension and uncertainty.
+- Unity 2022.3.16f1 LTS
+- PSX Shader Kit (see Acknowledgments)
 
-## Installation
+## Getting Started
+
+### Prerequisites
+
+- Unity 2022.3.16f1 LTS (or compatible Unity Editor install)
+
+### Installing / Running
 
 1. Clone the repository.
-2. Open the project in Unity Game Engine (Unity Editor).
+2. Open the project (the `Prochaine Station` folder) in the Unity Editor.
 
 Upon completion and readiness, the game is intended to be available on popular game launchers. Stay tuned for updates regarding its official release on these platforms.
 
+## Reporting Issues
 
-## How to Play
-
-- Navigate through each day's scenarios using simple controls.
-- Engage with environment objects and progress through tasks/events.
-- Immerse yourself in the narrative-driven, psychological gameplay.
+For any inquiries, issues, or feedback, please contact [Nirav](https://github.com/Niravanaa) or [Denmar](https://github.com/getll), or open an issue on this repository.
 
 ## Game Design Document Overview
 
@@ -63,10 +76,6 @@ Additionally, for insights into the game's development process, the team's progr
 
 Many thanks to [Valeria Moza](https://github.com/valerie-palerie) for her free [PSX Shader Kit](https://assetstore.unity.com/packages/vfx/shaders/psx-shader-kit-183591).
 
-## Support
-
-For any inquiries, issues, or feedback, please contact [Nirav](https://github.com/Niravanaa) or [Denmar](https://github.com/getll).
-
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT)
+MIT License - see [LICENSE](LICENSE).
